@@ -1,0 +1,60 @@
+[
+    {
+        "info": {
+            "name": "Andrew Corbett",
+            "address": "18 Almond Crescent",
+            "email": "andrewcorbett77@gmail.com",
+            "phone_number": "746-0509"
+        },
+        "player_statistics": {
+            "games_won": "0",
+            "games_lost": "0",
+            "games_played": "0",
+            "+/-": "+40"
+        },
+        "player_history": []
+    },
+    {
+        "info": {
+            "name": "Mark Constantine",
+            "address": "",
+            "email": ""
+        },
+        "player_statistics": {
+            "games_won": "0",
+            "games_lost": "0",
+            "games_played": "0",
+            "+/-": "-40"
+        },
+        "player_history": []
+    },
+    {
+        "info": {
+            "name": "Gerrard Nash",
+            "address": "Teakwood Drive",
+            "email": ""
+        },
+        "player_statistics": {
+            "games_won": "0",
+            "games_lost": "0",
+            "games_played": "0",
+            "+/-": "0"
+        },
+        "player_history": []
+    },
+    {
+        "info": {
+            "name": "Russell Corbett",
+            "email": "russellcorbett11@gmail.com",
+            "address": "18 Almond Crescent",
+            "phone_number": "7466644"
+        },
+        "player_statistics": {
+            "games_won": "0",
+            "games_lost": "0",
+            "games_played": "0",
+            "+/-": "0"
+        },
+        "player_history": []
+    }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "info":
+    {
+      "location": "Andrew Corbett's House",
+      "date": "May 25th, 2022",
+      "start_time": "7:02pm",
+      "end_time": "11:42pm",
+      "amount_in_pot": "200",
+      "buy_in": "20"
+    },
+    "game_statistics": {
+      "winner": "Mark Constantine",
+      "loser": "Andrew Corbett",
+      "most_hands_won": "Mark Constantine",
+      "most_hands_lost": "Andrew Corbett"
+    },
+    "players":
+            ["Andrew Corbett", "Mark Constantine"],
+    "player_statistics": [
+      {"name": "Andrew Corbett",
+      "amount_in": "40",
+      "amount_out": "0"},
+      {"name": "Mark Constantine",
+      "amount_in": "40",
+      "amount_out": "80"}
+    ]
+  }
+]
