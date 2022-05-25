@@ -103,7 +103,7 @@ class MainGUI(QMainWindow):
             self.playerStatistics.setItem(row, 3, QTableWidgetItem(player["player_statistics"]["+/-"]))
 
     def createGame(self):
-        create = game_creator.gameCreation(self)
+        create = game_creator.GameCreation(self)
 
 
 if __name__ == "__main__":
