@@ -27,7 +27,7 @@ class NewPlayer(QDialog):
         with open("json/players.json", 'r') as file:
             data = json.load(file)
         for i in data:
-            if i["info"]["name"] == self.nameField.text():
+            if (i["info"]["name"] == self.nameField.text()) or (self.nameField.text() == ""):
                 profile_exists = True
                 break
         else:
@@ -51,8 +51,4 @@ class NewPlayer(QDialog):
             with open("json/players.json", 'w') as file:
                 json.dump(data, file, indent=4)
         else:
-            print("A profile with this name already exists!")
-
-
-
-
+            print("A profile with this name cannot be created!")

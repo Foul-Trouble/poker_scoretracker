@@ -19,18 +19,20 @@ class MainGame(QDialog):
 
     def initUI(self):
         self.setWindowTitle(f'Main Game - {datetime.date.today()}')
-        self.showMaximized()
+        self.setFixedSize(975, 620)
+        self.show()
         from game_creator import gameStartInfo
         for enu, player in enumerate(gameStartInfo.players):
             def choices(enum):
                 def chosenPlayer():
-                    print(player)
+                    print(gameStartInfo.players[enu])
                 choice = QRadioButton()
-                choice.setAccessibleName(player)
-                choice.setText(player)
+                choice.setAccessibleName(gameStartInfo.players[enu])
+                choice.setText(gameStartInfo.players[enu])
                 self.playersLayout.addWidget(choice)
                 choice.clicked.connect(chosenPlayer)
             choices(enu)
+        self.endGameButton.clicked.connect(self.endGame)
 
     def displayTime(self):
         currentTime = QTime.currentTime()
@@ -38,3 +40,6 @@ class MainGame(QDialog):
         displayTxt = currentTime.toString('hh:mm')
 
         self.currentTime.display(displayTxt)
+
+    def endGame(self):
+        self.close()

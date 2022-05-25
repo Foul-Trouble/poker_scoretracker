@@ -132,7 +132,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Add New Location</string>
+     <string>Edit Players</string>
     </property>
    </widget>
    <widget class="QPushButton" name="addNewPlayerButton">
