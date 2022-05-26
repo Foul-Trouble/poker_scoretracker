@@ -25,10 +25,10 @@ class MainGame(QDialog):
         for enu, player in enumerate(gameStartInfo.players):
             def choices(enum):
                 def chosenPlayer():
-                    print(gameStartInfo.players[enu])
+                    print(gameStartInfo.players[enum])
                 choice = QRadioButton()
-                choice.setAccessibleName(gameStartInfo.players[enu])
-                choice.setText(gameStartInfo.players[enu])
+                choice.setAccessibleName(gameStartInfo.players[enum])
+                choice.setText(gameStartInfo.players[enum])
                 self.playersLayout.addWidget(choice)
                 choice.clicked.connect(chosenPlayer)
             choices(enu)
