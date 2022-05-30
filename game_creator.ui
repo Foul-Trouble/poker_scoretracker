@@ -137,14 +137,11 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QLabel" name="label_7">
+       <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>Spare:</string>
+         <string>Set Table Order</string>
         </property>
        </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_4"/>
       </item>
      </layout>
     </item>

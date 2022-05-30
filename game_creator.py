@@ -13,7 +13,7 @@ class GameStartData:
     def __init__(self):
         self.players = []
         self.location = None
-        self.buyin = None
+        self.buyin = 0
 
 
 class GameCreation(QDialog):
@@ -47,7 +47,7 @@ class GameCreation(QDialog):
         for enu, player in enumerate(player_data):
             def choices(enum):
                 def switchLocation():
-                    if player_data[enum]["info"]["name"] not in gameStartInfo.players:
+                    if player_data[enum]["info"]["name"] in gameStartInfo.players:
                         gameStartInfo.location = f"{player_data[enum]['info']['name']}'s House"
                 choice = QRadioButton()
                 choice.setAccessibleName(f"{player_data[enum]['info']['name']}'s")
@@ -57,8 +57,13 @@ class GameCreation(QDialog):
             choices(enu)
 
     def end(self):
-        create = main_game.MainGame(self)
-        self.close()
+        if (len(gameStartInfo.players) > 2) and (gameStartInfo.location is not None) and (int(self.buyinField.text()) > 0):
+            gameStartInfo.buyin = int(self.buyinField.text())
+            create = main_game.MainGame(self)
+            self.close()
+        else:
+            print((len(gameStartInfo.players)), gameStartInfo.location, float(self.buyinField.text()))
+            print("Game unable to start, does not meet the requirements")
 
 
 gameStartInfo = GameStartData()
