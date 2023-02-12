@@ -56,5 +56,20 @@
             "+/-": "0"
         },
         "player_history": []
+    },
+    {
+        "info": {
+            "name": "Alex Corbett",
+            "email": "aj@gmail.com",
+            "address": "Narnia",
+            "phone_number": "777"
+        },
+        "player_statistics": {
+            "games_won": "0",
+            "games_lost": "0",
+            "games_played": "0",
+            "+/-": "0"
+        },
+        "player_history": []
     }
 ]

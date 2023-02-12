@@ -20,6 +20,7 @@ def clearLayout(layout):
             elif child.layout() is not None:
                 clearLayout(child.layout())
 
+
 class MainGUI(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -84,6 +85,7 @@ class MainGUI(QMainWindow):
 
         self.currentTime.display(displayTxt)
 
+    @staticmethod
     def exitSoftware(self):
         exit()
 
